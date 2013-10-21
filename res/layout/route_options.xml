@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Opties \n"
+        android:id="@+id/name_group_text"
+        android:gravity="left"
+        android:textSize="40sp"
+        />
+	<EditText
+	    android:id="@+id/name_group"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="groepsnaam"
+	    android:textSize="20sp"
+	    />
+	<EditText 
+	    android:id="@+id/name_route"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:hint="naam route"
+	    android:textSize="20sp"
+	    />
+	<CheckBox
+	    android:id="@+id/online"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Online"
+	    android:textSize="20sp"
+	    />
+	<EditText 
+	    android:id="@+id/ip"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:hint="ip:port"
+	    android:textSize="20sp"
+	    />
+	<TextView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    />
+	<Button 
+	    android:text="          OK          "
+	    android:id="@+id/accept"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_gravity="center"
+	    />
+
+</LinearLayout>
