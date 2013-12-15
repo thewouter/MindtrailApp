@@ -2,6 +2,7 @@ package nl.wouter.gpstest;
 
 import java.io.File;
 import java.nio.ByteBuffer;
+import java.util.ArrayList;
 
 import android.app.PendingIntent;
 import android.os.Environment;
@@ -12,6 +13,7 @@ public class Util {
 	public static double LAT = 0;
 	public static PendingIntent intent = null;
 	public static String saveLocation = Environment.getExternalStorageDirectory().getPath() + File.separator + "GpsTest";
+	public static ArrayList<Integer> messagesReceived = new ArrayList<Integer>();
 
 	public static String decimalToDMS(double coord) {
 	    String output, degrees, minutes, seconds;

@@ -36,7 +36,7 @@ public class LocationSender extends Thread {
 			out = new PrintStream((socket.getOutputStream()));
 			in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 		} catch (UnknownHostException e) {
-			Log.e("NetworkHandler", "unknown host", e);
+			Log.e("NetworkHandler", "unknown host: " + ip + ":" + port, e);
 			return false;
 		} catch (IOException e) {
 			Log.e("NetworkHandler", "other exception", e);
@@ -59,7 +59,8 @@ public class LocationSender extends Thread {
 	}
 	
 	public void messageReceived(int message){
-		
+		Log.d("LocationSender", "received: " + message);
+		Util.messagesReceived.add(message);
 	}
 	
 	public void sendCoordinates(){
@@ -68,17 +69,12 @@ public class LocationSender extends Thread {
 		sendGroupName();
 		try {
 			byte[] bytes = Util.intToBytes(lon);
-			Log.d("locationSender", lon + "");
-			Log.d("LocationSender", bytes[0] + "");
-			Log.d("LocationSender", bytes[1] + "");
-			Log.d("LocationSender", bytes[2] + "");
-			Log.d("LocationSender", bytes[3] + "");
+			Log.d("locationSender", lat + " " + lon);
 			out.write(bytes);
 			out.write(Util.intToBytes(lat));
 		} catch (IOException e1) {
 			Log.e("LocationSenderStarter", "error in sending coordinates", e1);
 		}
-		
 		int received = readInt();
 		for(int i = 0; i < received; i++){
 			messageReceived(readInt());

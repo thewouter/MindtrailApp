@@ -20,14 +20,6 @@
 	    android:text="stop sending"
 	    android:editable="false"
 	    android:textSize="20sp" />
-
-	<TextView 
-	    android:id="@+id/display"
-	    android:layout_height="wrap_content"
-	    android:layout_width="fill_parent"
-	    android:text="no"
-	    android:textSize="20sp"
-	    />
 	<Button 
 	    android:id="@+id/switch_sending"
 	    android:text="Start Sending"
@@ -35,17 +27,25 @@
 	    android:layout_height="wrap_content"
 	    android:textSize="20sp"
 	    />
-	<Button 
-	    android:layout_width="wrap_content"
-	    android:id="@+id/switch_gps"
+
+	<TextView
+	    android:id="@+id/display"
+	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
-	    android:text="turn Gps Off"
-	    />
-	<Button 
-	    android:layout_width="wrap_content"
+	    android:text="no"
+	    android:textSize="20sp" />
+
+	<TextView
+	    android:id="@+id/imageIndexDisplay"
+	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:id="@+id/show_coords"
-	    android:text="show coords"
-	    />
+	    android:text="1" 
+	    android:gravity="center"
+	    android:textSize="20sp"/>
+
+	<Gallery
+	    android:id="@+id/gallery"
+	    android:layout_width="match_parent"
+	    android:layout_height="268dp" />
 
 </LinearLayout>

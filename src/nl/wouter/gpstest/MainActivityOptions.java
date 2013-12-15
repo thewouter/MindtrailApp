@@ -32,7 +32,7 @@ public class MainActivityOptions extends Activity {
 		groupName = (EditText) findViewById(R.id.name_group);
 		routeName = (EditText) findViewById(R.id.name_route);
 		online = (CheckBox) findViewById(R.id.online);
-		ip.setText("192.168.1.86:4444");
+		ip.setText("192.168.1.18:4444");
 		accept.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				MainActivity m = new MainActivity();
