@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="nl.wouter.gpstest"
-    android:versionCode="1"
-    android:versionName="1.0">
+    package="nl.wouter.MindTrail"
+    android:versionCode="2"
+    android:versionName="1.0.1">
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -11,10 +11,8 @@
         android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
     <uses-permission 
         android:name="android.permission.ACCESS_FINE_LOCATION" />
- 	<uses-permission 
- 	    android:name="android.permission.ACCESS_MOCK_LOCATION" />
- 	<uses-permission 
- 	    android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"/>
  	<uses-permission 
  	    android:name="android.permission.INTERNET"/>
  	<uses-permission 
@@ -27,7 +25,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
-            android:name="nl.wouter.gpstest.Splash"
+            android:name="nl.wouter.MindTrail.Splash"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,7 +34,7 @@
             
         </activity>
         <activity
-            android:name="nl.wouter.gpstest.TestActivity"
+            android:name="nl.wouter.MindTrail.TestActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,7 +43,7 @@
             
         </activity>
         <activity
-            android:name="nl.wouter.gpstest.MainActivity"
+            android:name="nl.wouter.MindTrail.MainActivity"
             android:label="@string/app_name" 
             android:screenOrientation="portrait">
             <intent-filter>
@@ -54,7 +52,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="nl.wouter.gpstest.MainMenu"
+            android:name="nl.wouter.MindTrail.MainMenu"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -62,7 +60,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="nl.wouter.gpstest.GetGpsActivity"
+            android:name="nl.wouter.MindTrail.GetGpsActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -70,12 +68,12 @@
             </intent-filter>
         </activity>
         <activity 
-            android:name="nl.wouter.gpstest.MainActivityOptions"
+            android:name="nl.wouter.MindTrail.MainActivityOptions"
             android:theme="@android:style/Theme.Light.NoTitleBar">
         </activity>
         
         <service 
-            android:name="nl.wouter.gpstest.LocationSenderStarter"
+            android:name="nl.wouter.MindTrail.LocationSenderStarter"
             />
     </application>
 
