@@ -3,23 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" 
-    android:background="@drawable/simple_background">
-    
-	<Button
-	    android:id="@+id/get_gps_button"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_gravity="center"
-	    android:text="Get gps info"
-	    android:textSize="20sp" />
+    android:background="@drawable/simple_background"
+    android:orientation="vertical" >
 
-	<TextView
-	    android:id="@+id/gps_uitput"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:gravity="center"
-	    android:text="no Information"
-	    android:textSize="30sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80sp"/>
+
+    <TextView
+        android:id="@+id/gps_uitput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="no Information"
+        android:textSize="30sp" />
 
 </LinearLayout>

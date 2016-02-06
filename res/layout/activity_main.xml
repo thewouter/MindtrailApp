@@ -3,50 +3,41 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:background="@drawable/simple_background">
+    android:background="@drawable/background_empty">
+    
 	<TextView 
 	    android:id="@+id/main_message"
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
 	    android:gravity="center"
-	    android:text="Alles OK"
-	    android:textSize="45sp"
-		/>
-
-	<Button
-	    android:id="@+id/send"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:gravity="center"
-	    android:text="stop sending"
-	    android:editable="false"
-	    android:textSize="20sp" />
-	<Button 
-	    android:id="@+id/switch_sending"
-	    android:text="Start Sending"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:textSize="20sp"
-	    />
+	    android:text="Nog geen GPS ontvangen"
+	    android:textSize="45sp"/>
 
 	<TextView
 	    android:id="@+id/display"
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
-	    android:text="no"
-	    android:textSize="20sp" />
-
+	    android:text=""
+	    android:textSize="20sp"/>
+	
 	<TextView
 	    android:id="@+id/imageIndexDisplay"
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:text="1" 
+	    android:text="0" 
+	    android:gravity="center"/>
+	
+	<Button
+	    android:id="@+id/helpButton"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
 	    android:gravity="center"
-	    android:textSize="20sp"/>
-
-	<Gallery
-	    android:id="@+id/gallery"
-	    android:layout_width="match_parent"
-	    android:layout_height="268dp" />
-
+	    android:text="HELP, IK BEN DE WEG KWIJT" />
+	
+	<android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" 
+        android:gravity="center"/>
+	
 </LinearLayout>
