@@ -128,7 +128,6 @@ public class GpsTester extends Service implements
 
 	@Override
 	public void onConnectionSuspended(int cause) {
-		// TODO Auto-generated method stub
 		
 	}
 }
