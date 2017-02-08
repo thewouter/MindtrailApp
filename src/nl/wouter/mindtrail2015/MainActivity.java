@@ -2,7 +2,6 @@ package nl.wouter.mindtrail2015;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.security.acl.LastOwnerException;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
