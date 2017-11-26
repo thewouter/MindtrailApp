@@ -66,7 +66,7 @@ public class MainActivity extends Activity implements
 	private MediaPlayer player;
 	private int lastPost = 0;
 	
-	private static String CODE = "IT";
+	private static String CODE = "MINI";
    
     
 	protected void onCreate(Bundle savedInstanceState) {
